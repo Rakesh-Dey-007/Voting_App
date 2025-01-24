@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+</head>
+
+<body>
+    <a href="/voting_page">
+        <button class="button">Back to Home</button>
+    </a>
+    <div class="card">
+        <div class="left-container">
+            <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/fc8d0488-fec8-4354-adf8-62a6028dc103/c792696e-a6e6-4107-bcf4-6a540894d39c.png" alt="Profile Image">
+            <h2 class="gradienttext"><%= user.name %></h2>
+            <p>Role: <%= user.role || 'Not specified' %></p>
+        </div>
+        <div class="right-container">
+            <h3 class="gradienttext">Profile Details</h3>
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><%= user.username %></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><%= user.age %></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td><%= user.mobile %></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><%= user.email || 'Not provided' %></td>
+                </tr>
+                <tr>
+                    <td>Aadhar Number:</td>
+                    <td><%= user.addhar %></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><%= user.address %></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>*********</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>

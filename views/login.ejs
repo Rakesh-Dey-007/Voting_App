@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Login Form</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <div class="flex text-white ml-5 p-5">
+        <a href="/"><button type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-zinc-700 dark:hover:bg-zinc-800 dark:focus:ring-blue-800 mr-3"><i
+                    class="fa-solid fa-reply-all"></i> &nbsp;Back to Home</button></a>
+    </div>
+
+
+    <div class="login-box">
+
+        <form action="/login" method="post">
+            <h1>LOGIN PAGE</h1>
+
+            <div class="user-box">
+                <input type="text" name="addhar" required="">
+                <label>Addhar Number</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required="">
+                <label>Password</label>
+            </div>
+            <center>
+
+                <button class="send" type="submit">
+                    LOGIN
+                    <span></span>
+                </button>
+
+            </center>
+
+            <h5 class="sign">Don't have an account ? <a href="/sign">signin</a></h5>
+        </form>
+    </div>
+</body>
+
+</html>
